@@ -1,9 +1,0 @@
-Metadata-Version: 2.1
-Name: fahrenheittocelsius
-Formal-Name: Fahrenheit To Celsius
-App-ID: com.example.fahrenheittocelsius
-Version: 0.0.1
-Home-page: https://github.com/pmfrank/beeware-tutorials
-Author: Paul Frankovich
-Author-email: pmfrankovich@gmail.com
-Summary: Convert F to C
