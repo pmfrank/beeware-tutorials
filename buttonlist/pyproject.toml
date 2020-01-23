@@ -1,0 +1,45 @@
+[build-system]
+requires = ["briefcase"]
+
+[tool.briefcase]
+project_name = "Button List"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://github.com/pmfrank/beeware-tutorials"
+license = "BSD license"
+author = 'Paul Frankovich'
+author_email = "pmfrankovich@gmail.com"
+
+[tool.briefcase.app.buttonlist]
+formal_name = "Button List"
+description = "An attempt to make a variable amount of buttons that do different things"
+icon = "src/buttonlist/resources/buttonlist"
+sources = ['src/buttonlist']
+requires = []
+
+
+[tool.briefcase.app.buttonlist.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.buttonlist.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.buttonlist.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev18',
+]
+
+# Mobile deployments
+[tool.briefcase.app.buttonlist.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.buttonlist.android]
+requires = [
+    'toga-android>=0.3.0.dev18',
+]
