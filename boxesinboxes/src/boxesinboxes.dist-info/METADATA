@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: boxesinboxes
+Formal-Name: Boxes in Boxes
+App-ID: com.example.boxesinboxes
+Version: 0.0.1
+Home-page: https://github.com/pmfrank/beeware-toturials
+Author: Paul Frankovich
+Author-email: pmfrankovich@gmail.com
+Summary: Example of getting boxes in boxes to get good layouts

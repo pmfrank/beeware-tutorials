@@ -1,0 +1,45 @@
+[build-system]
+requires = ["briefcase"]
+
+[tool.briefcase]
+project_name = "Boxes in Boxes"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://github.com/pmfrank/beeware-toturials"
+license = "BSD license"
+author = 'Paul Frankovich'
+author_email = "pmfrankovich@gmail.com"
+
+[tool.briefcase.app.boxesinboxes]
+formal_name = "Boxes in Boxes"
+description = "Example of getting boxes in boxes to get good layouts"
+icon = "src/boxesinboxes/resources/boxesinboxes"
+sources = ['src/boxesinboxes']
+requires = []
+
+
+[tool.briefcase.app.boxesinboxes.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.boxesinboxes.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.boxesinboxes.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev18',
+]
+
+# Mobile deployments
+[tool.briefcase.app.boxesinboxes.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.boxesinboxes.android]
+requires = [
+    'toga-android>=0.3.0.dev18',
+]
