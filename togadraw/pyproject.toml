@@ -1,0 +1,45 @@
+[build-system]
+requires = ["briefcase"]
+
+[tool.briefcase]
+project_name = "Toga Draw"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://github.com/pmfrank/beeware-tutorials"
+license = "BSD license"
+author = 'Paul Frankovich'
+author_email = "pmfrankovich@gmail.com"
+
+[tool.briefcase.app.togadraw]
+formal_name = "Toga Draw"
+description = "Working with a canvas"
+icon = "src/togadraw/resources/togadraw"
+sources = ['src/togadraw']
+requires = []
+
+
+[tool.briefcase.app.togadraw.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.togadraw.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.togadraw.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev18',
+]
+
+# Mobile deployments
+[tool.briefcase.app.togadraw.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.togadraw.android]
+requires = [
+    'toga-android>=0.3.0.dev18',
+]
