@@ -1,0 +1,45 @@
+[build-system]
+requires = ["briefcase"]
+
+[tool.briefcase]
+project_name = "Graze Browser"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://github.com/pmfrank/beeware-tutorials"
+license = "BSD license"
+author = 'Paul Frankovich'
+author_email = "pmfrankovich@gmail.com"
+
+[tool.briefcase.app.grazebrowser]
+formal_name = "Graze Browser"
+description = "Web browser using BeeWare suite"
+icon = "src/grazebrowser/resources/grazebrowser"
+sources = ['src/grazebrowser']
+requires = []
+
+
+[tool.briefcase.app.grazebrowser.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.grazebrowser.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.grazebrowser.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev18',
+]
+
+# Mobile deployments
+[tool.briefcase.app.grazebrowser.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.grazebrowser.android]
+requires = [
+    'toga-android>=0.3.0.dev18',
+]
